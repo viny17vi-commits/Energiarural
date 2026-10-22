@@ -31,7 +31,7 @@ public abstract class MachineBlock extends Block implements EntityBlock {
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hit) {
         if (!level.isClientSide() && level.getBlockEntity(pos) instanceof MachineBE be) {
-            player.displayClientMessage(Component.literal("Energia: " + be.buffer.energy + " / " + be.buffer.capacity + " FE"), true);
+            player.sendOverlayMessage(Component.literal("Energia: " + be.buffer.energy + " / " + be.buffer.capacity + " FE"));
         }
         return InteractionResult.SUCCESS;
     }

@@ -1,6 +1,5 @@
 package com.energiarural;
 
-import com.mojang.serialization.MapCodec;
 import java.util.Map;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -21,7 +20,6 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class CableBlock extends MachineBlock {
-    public static final MapCodec<CableBlock> CODEC = simpleCodec(CableBlock::new);
     private static final Map<Direction, BooleanProperty> PROPS = Map.of(
             Direction.NORTH, BlockStateProperties.NORTH,
             Direction.SOUTH, BlockStateProperties.SOUTH,
@@ -45,11 +43,6 @@ public class CableBlock extends MachineBlock {
             def = def.setValue(p, false);
         }
         registerDefaultState(def);
-    }
-
-    @Override
-    protected MapCodec<? extends Block> codec() {
-        return CODEC;
     }
 
     @Override

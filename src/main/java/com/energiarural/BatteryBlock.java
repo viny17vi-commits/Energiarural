@@ -1,6 +1,5 @@
 package com.energiarural;
 
-import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
@@ -15,15 +14,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 
 public class BatteryBlock extends MachineBlock {
-    public static final MapCodec<BatteryBlock> CODEC = simpleCodec(BatteryBlock::new);
 
     public BatteryBlock(Properties properties) {
         super(properties);
-    }
-
-    @Override
-    protected MapCodec<? extends Block> codec() {
-        return CODEC;
     }
 
     @Override
@@ -47,8 +40,8 @@ public class BatteryBlock extends MachineBlock {
             int moved = weapon.charge(stack, Math.min(be.buffer.energy, 5000));
             be.buffer.energy -= moved;
             be.setChanged();
-            player.displayClientMessage(Component.literal("Arma: " + weapon.getEnergy(stack) + " / " + weapon.tier.capacity
-                    + " FE   |   Bateria: " + be.buffer.energy + " FE"), true);
+            player.sendOverlayMessage(Component.literal("Arma: " + weapon.getEnergy(stack) + " / " + weapon.tier.capacity
+                    + " FE   |   Bateria: " + be.buffer.energy + " FE"));
         }
         return InteractionResult.SUCCESS;
     }
