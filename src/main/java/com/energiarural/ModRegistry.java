@@ -14,7 +14,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
@@ -39,13 +38,13 @@ public final class ModRegistry {
 
     // Blocos
     public static final DeferredBlock<WaterMillBlock> WATER_MILL = BLOCKS.registerBlock("water_mill", WaterMillBlock::new,
-            BlockBehaviour.Properties.of().strength(2.5F).sound(SoundType.WOOD).noOcclusion());
+            p -> p.strength(2.5F).sound(SoundType.WOOD).noOcclusion());
     public static final DeferredBlock<CableBlock> CABLE = BLOCKS.registerBlock("cable", CableBlock::new,
-            BlockBehaviour.Properties.of().strength(1.0F).sound(SoundType.METAL).noOcclusion());
+            p -> p.strength(1.0F).sound(SoundType.METAL).noOcclusion());
     public static final DeferredBlock<BatteryBlock> BATTERY = BLOCKS.registerBlock("battery", BatteryBlock::new,
-            BlockBehaviour.Properties.of().strength(3.0F).sound(SoundType.METAL));
+            p -> p.strength(3.0F).sound(SoundType.METAL));
     public static final DeferredBlock<HarvesterBlock> HARVESTER = BLOCKS.registerBlock("harvester", HarvesterBlock::new,
-            BlockBehaviour.Properties.of().strength(3.0F).sound(SoundType.METAL));
+            p -> p.strength(3.0F).sound(SoundType.METAL));
 
     public static final DeferredItem<?> WATER_MILL_ITEM = ITEMS.registerSimpleBlockItem(WATER_MILL);
     public static final DeferredItem<?> CABLE_ITEM = ITEMS.registerSimpleBlockItem(CABLE);
@@ -73,7 +72,7 @@ public final class ModRegistry {
                                     EquipmentSlotGroup.MAINHAND)
                             .add(Attributes.ATTACK_SPEED, new AttributeModifier(Item.BASE_ATTACK_SPEED_ID, tier.speed, AttributeModifier.Operation.ADD_VALUE),
                                     EquipmentSlotGroup.MAINHAND)
-                            .build()), tier), new Item.Properties());
+                            .build()), tier));
         }
     }
 
