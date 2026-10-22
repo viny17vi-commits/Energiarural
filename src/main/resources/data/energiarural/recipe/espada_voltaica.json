@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "G",
+    "B",
+    "I"
+  ],
+  "key": {
+    "G": "minecraft:gold_ingot",
+    "B": "energiarural:battery",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "energiarural:espada_voltaica",
+    "count": 1
+  }
+}

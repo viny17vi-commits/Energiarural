@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LIL",
+    "IRI",
+    "LIL"
+  ],
+  "key": {
+    "L": "#minecraft:logs",
+    "I": "minecraft:iron_ingot",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "energiarural:water_mill",
+    "count": 1
+  }
+}

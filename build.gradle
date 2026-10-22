@@ -1,0 +1,27 @@
+plugins {
+    id('java')
+    id('net.neoforged.moddev').version('2.0.148')
+}
+
+version = project.mod_version
+group = 'com.energiarural'
+base { archivesName = 'energiarural' }
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
+}
+
+neoForge {
+    version = project.neo_version
+    runs {
+        client { client() }
+        server { server() }
+    }
+    mods {
+        energiarural { sourceSet(sourceSets.main) }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}

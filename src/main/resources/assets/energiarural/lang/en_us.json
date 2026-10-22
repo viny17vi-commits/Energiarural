@@ -1,0 +1,12 @@
+{
+  "itemGroup.energiarural": "Rural Energy",
+  "block.energiarural.water_mill": "Water Mill (Hydro Generator)",
+  "block.energiarural.cable": "Energy Cable",
+  "block.energiarural.battery": "Battery",
+  "block.energiarural.harvester": "Auto Harvester",
+  "item.energiarural.bastao_choque": "Shock Baton",
+  "item.energiarural.espada_voltaica": "Voltaic Sword",
+  "item.energiarural.lamina_de_arco": "Arc Blade",
+  "item.energiarural.martelo_tesla": "Tesla Hammer",
+  "item.energiarural.ceifadora_plasma": "Plasma Reaper"
+}

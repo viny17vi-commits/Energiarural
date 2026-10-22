@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+    modId="energiarural"
+    version="1.0.0"
+    displayName="Energia Rural"
+    description="Moinho de água, cabos, bateria, colheitadeira automática e armas de energia. Compatível com a energia do Mekanism."
+
+[[dependencies.energiarural]]
+    modId="minecraft"
+    type="required"
+    versionRange="[26.3,26.4)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.energiarural]]
+    modId="neoforge"
+    type="required"
+    versionRange="[26.3.0.76,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.energiarural]]
+    modId="mekanism"
+    type="optional"
+    versionRange="[10.8.0,)"
+    ordering="AFTER"
+    side="BOTH"

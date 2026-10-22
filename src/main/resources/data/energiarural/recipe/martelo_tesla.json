@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XBX",
+    " I ",
+    " I "
+  ],
+  "key": {
+    "X": "minecraft:diamond_block",
+    "B": "energiarural:battery",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "energiarural:martelo_tesla",
+    "count": 1
+  }
+}

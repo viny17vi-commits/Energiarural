@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "NBN",
+    " S ",
+    " N "
+  ],
+  "key": {
+    "N": "minecraft:netherite_ingot",
+    "B": "energiarural:battery",
+    "S": "minecraft:nether_star"
+  },
+  "result": {
+    "id": "energiarural:ceifadora_plasma",
+    "count": 1
+  }
+}

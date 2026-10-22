@@ -1,0 +1,12 @@
+{
+  "itemGroup.energiarural": "Energia Rural",
+  "block.energiarural.water_mill": "Moinho de Água (Hidrelétrica)",
+  "block.energiarural.cable": "Cabo de Energia",
+  "block.energiarural.battery": "Bateria",
+  "block.energiarural.harvester": "Colheitadeira Automática",
+  "item.energiarural.bastao_choque": "Bastão de Choque",
+  "item.energiarural.espada_voltaica": "Espada Voltaica",
+  "item.energiarural.lamina_de_arco": "Lâmina de Arco",
+  "item.energiarural.martelo_tesla": "Martelo Tesla",
+  "item.energiarural.ceifadora_plasma": "Ceifadora de Plasma"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "energiarural:item/lamina_de_arco"
+  }
+}

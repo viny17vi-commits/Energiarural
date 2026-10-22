@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IHI",
+    "RBR",
+    "III"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "H": "minecraft:iron_hoe",
+    "R": "minecraft:redstone",
+    "B": "energiarural:battery"
+  },
+  "result": {
+    "id": "energiarural:harvester",
+    "count": 1
+  }
+}

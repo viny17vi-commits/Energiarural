@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "D",
+    "B",
+    "B"
+  ],
+  "key": {
+    "D": "minecraft:diamond",
+    "B": "energiarural:battery"
+  },
+  "result": {
+    "id": "energiarural:lamina_de_arco",
+    "count": 1
+  }
+}
